@@ -1,0 +1,31 @@
+Search,Mechanism,LR,WD,HiddenDim,Avg final acc,Task0 acc,Task1 acc,Task2 acc,Task3 acc,Task4 acc,Task5 acc,Last arch,Edges (last task train),Params trained (last task)
+Grid,naive,1.000e-03,1.000e-05,32,65.22%,71.12%,56.88%,52.62%,70.39%,68.56%,71.74%,StaticGCN: GraphConv(13->32) | GraphConv(32->32); dot-product scorer,180,1504
+Grid,rehearsal,1.000e-03,0.000e+00,128,69.10%,65.75%,62.38%,56.50%,73.42%,73.94%,82.61%,StaticGCN: GraphConv(13->128) | GraphConv(128->128); dot-product scorer,180,18304
+Grid,ewc,1.000e-03,0.000e+00,128,68.15%,72.50%,62.75%,53.25%,62.67%,72.95%,84.78%,StaticGCN: GraphConv(13->128) | GraphConv(128->128); dot-product scorer,180,18304
+Grid,si,1.000e-03,0.000e+00,128,66.38%,70.00%,62.00%,58.63%,53.31%,76.06%,78.26%,StaticGCN: GraphConv(13->128) | GraphConv(128->128); dot-product scorer,180,18304
+Grid,gen_replay,1.000e-03,0.000e+00,128,65.91%,64.12%,62.88%,55.62%,57.30%,72.95%,82.61%,StaticGCN: GraphConv(13->128) | GraphConv(128->128); dot-product scorer,180,18304
+Random,naive,2.593e-03,1.011e-06,32,67.89%,77.50%,57.00%,53.37%,64.46%,76.77%,78.26%,StaticGCN: GraphConv(13->32) | GraphConv(32->32); dot-product scorer,180,1504
+Random,rehearsal,2.962e-03,5.962e-06,256,70.88%,77.75%,70.12%,74.00%,73.00%,76.06%,54.35%,StaticGCN: GraphConv(13->256) | GraphConv(256->256); dot-product scorer,180,69376
+Random,ewc,7.404e-04,9.735e-06,256,63.88%,68.38%,65.25%,56.38%,54.41%,73.65%,65.22%,StaticGCN: GraphConv(13->256) | GraphConv(256->256); dot-product scorer,180,69376
+Random,si,1.518e-03,3.300e-06,256,69.31%,72.50%,64.75%,59.62%,55.65%,80.74%,82.61%,StaticGCN: GraphConv(13->256) | GraphConv(256->256); dot-product scorer,180,69376
+Random,gen_replay,2.227e-03,1.871e-06,64,69.87%,81.00%,63.88%,56.12%,55.10%,84.84%,78.26%,StaticGCN: GraphConv(13->64) | GraphConv(64->64); dot-product scorer,180,5056
+Bayesian,naive,1.780e-03,9.446e-04,64,70.96%,72.62%,63.62%,62.62%,73.28%,75.35%,78.26%,StaticGCN: GraphConv(13->64) | GraphConv(64->64); dot-product scorer,180,5056
+Bayesian,rehearsal,2.143e-03,1.338e-06,256,68.76%,79.88%,67.75%,62.25%,63.09%,78.75%,60.87%,StaticGCN: GraphConv(13->256) | GraphConv(256->256); dot-product scorer,180,69376
+Bayesian,ewc,2.888e-03,3.605e-06,256,68.39%,82.00%,71.62%,66.62%,53.99%,81.73%,54.35%,StaticGCN: GraphConv(13->256) | GraphConv(256->256); dot-product scorer,180,69376
+Bayesian,si,7.596e-04,7.423e-05,32,63.25%,52.25%,55.12%,52.12%,77.13%,68.98%,73.91%,StaticGCN: GraphConv(13->32) | GraphConv(32->32); dot-product scorer,180,1504
+Bayesian,gen_replay,2.718e-03,3.328e-06,256,71.38%,81.50%,66.12%,64.75%,51.79%,85.84%,78.26%,StaticGCN: GraphConv(13->256) | GraphConv(256->256); dot-product scorer,180,69376
+Hyperband,naive,3.039e-03,1.442e-06,128,64.16%,57.12%,64.12%,55.75%,56.20%,73.51%,78.26%,StaticGCN: GraphConv(13->128) | GraphConv(128->128); dot-product scorer,180,18304
+Hyperband,rehearsal,2.545e-03,1.068e-04,32,61.85%,61.62%,57.88%,61.25%,50.14%,72.80%,67.39%,StaticGCN: GraphConv(13->32) | GraphConv(32->32); dot-product scorer,180,1504
+Hyperband,ewc,3.140e-03,4.277e-05,64,68.00%,65.00%,66.62%,55.75%,73.28%,75.64%,71.74%,StaticGCN: GraphConv(13->64) | GraphConv(64->64); dot-product scorer,180,5056
+Hyperband,si,2.499e-03,7.055e-05,128,60.99%,68.50%,60.62%,54.25%,53.31%,74.93%,54.35%,StaticGCN: GraphConv(13->128) | GraphConv(128->128); dot-product scorer,180,18304
+Hyperband,gen_replay,2.827e-03,4.330e-06,64,63.96%,61.00%,56.25%,55.25%,52.75%,75.92%,82.61%,StaticGCN: GraphConv(13->64) | GraphConv(64->64); dot-product scorer,180,5056
+Population-based (PBT),naive,1.415e-03,8.318e-06,32,58.73%,67.12%,65.62%,55.50%,50.41%,63.74%,50.00%,StaticGCN: GraphConv(13->32) | GraphConv(32->32); dot-product scorer,180,1504
+Population-based (PBT),rehearsal,9.738e-04,1.775e-04,128,59.31%,51.12%,51.50%,51.25%,50.14%,71.39%,80.43%,StaticGCN: GraphConv(13->128) | GraphConv(128->128); dot-product scorer,180,18304
+Population-based (PBT),ewc,4.024e-03,2.215e-06,32,54.41%,50.25%,51.12%,51.50%,53.17%,70.40%,50.00%,StaticGCN: GraphConv(13->32) | GraphConv(32->32); dot-product scorer,180,1504
+Population-based (PBT),si,1.372e-03,1.857e-05,64,52.28%,52.00%,51.25%,51.62%,53.17%,55.67%,50.00%,StaticGCN: GraphConv(13->64) | GraphConv(64->64); dot-product scorer,180,5056
+Population-based (PBT),gen_replay,1.433e-03,1.535e-06,64,55.57%,52.25%,52.00%,53.75%,57.30%,68.13%,50.00%,StaticGCN: GraphConv(13->64) | GraphConv(64->64); dot-product scorer,180,5056
+Evolutionary (GA),naive,2.126e-03,9.120e-06,64,67.57%,69.62%,70.50%,58.00%,50.83%,76.06%,80.43%,StaticGCN: GraphConv(13->64) | GraphConv(64->64); dot-product scorer,180,5056
+Evolutionary (GA),rehearsal,2.189e-03,1.682e-04,64,61.41%,66.75%,63.62%,53.50%,50.28%,69.12%,65.22%,StaticGCN: GraphConv(13->64) | GraphConv(64->64); dot-product scorer,180,5056
+Evolutionary (GA),ewc,2.314e-03,1.672e-06,256,67.02%,78.38%,67.50%,61.62%,57.71%,82.58%,54.35%,StaticGCN: GraphConv(13->256) | GraphConv(256->256); dot-product scorer,180,69376
+Evolutionary (GA),si,3.239e-03,8.812e-05,32,68.64%,77.38%,66.12%,66.75%,50.41%,79.46%,71.74%,StaticGCN: GraphConv(13->32) | GraphConv(32->32); dot-product scorer,180,1504
+Evolutionary (GA),gen_replay,2.884e-04,3.214e-06,128,54.39%,50.00%,50.00%,50.00%,50.00%,52.41%,73.91%,StaticGCN: GraphConv(13->128) | GraphConv(128->128); dot-product scorer,180,18304

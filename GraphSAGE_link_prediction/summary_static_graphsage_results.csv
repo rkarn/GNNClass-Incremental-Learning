@@ -1,0 +1,31 @@
+Search,Mechanism,LR,WD,HiddenDim,Avg final acc,Task0 acc,Task1 acc,Task2 acc,Task3 acc,Task4 acc,Task5 acc,Last arch,Edges (last task train),Params trained (last task)
+Grid,naive,5.000e-04,0.000e+00,128,68.41%,67.88%,67.75%,61.00%,61.16%,72.24%,80.43%,StaticGraphSAGE: SAGEConv(13->128) | SAGEConv(128->128); dot-product scorer,180,36352
+Grid,rehearsal,5.000e-04,0.000e+00,32,73.24%,72.00%,78.50%,72.50%,61.29%,72.52%,82.61%,StaticGraphSAGE: SAGEConv(13->32) | SAGEConv(32->32); dot-product scorer,180,2944
+Grid,ewc,5.000e-04,1.000e-05,64,70.02%,77.62%,70.50%,55.00%,66.53%,78.75%,71.74%,StaticGraphSAGE: SAGEConv(13->64) | SAGEConv(64->64); dot-product scorer,180,9984
+Grid,si,1.000e-03,0.000e+00,128,68.95%,77.50%,73.00%,60.12%,59.64%,78.19%,65.22%,StaticGraphSAGE: SAGEConv(13->128) | SAGEConv(128->128); dot-product scorer,180,36352
+Grid,gen_replay,1.000e-03,1.000e-05,32,69.61%,83.88%,68.00%,62.62%,59.78%,73.80%,69.57%,StaticGraphSAGE: SAGEConv(13->32) | SAGEConv(32->32); dot-product scorer,180,2944
+Random,naive,7.370e-04,6.739e-06,64,70.19%,74.75%,76.62%,58.50%,68.60%,77.48%,65.22%,StaticGraphSAGE: SAGEConv(13->64) | SAGEConv(64->64); dot-product scorer,180,9984
+Random,rehearsal,1.952e-03,9.999e-06,128,68.29%,84.00%,70.38%,70.25%,55.65%,79.46%,50.00%,StaticGraphSAGE: SAGEConv(13->128) | SAGEConv(128->128); dot-product scorer,180,36352
+Random,ewc,5.820e-04,4.897e-05,32,68.21%,72.38%,76.50%,58.88%,63.22%,73.09%,65.22%,StaticGraphSAGE: SAGEConv(13->32) | SAGEConv(32->32); dot-product scorer,180,2944
+Random,si,1.518e-03,3.300e-06,256,67.12%,85.38%,72.00%,61.62%,54.82%,78.90%,50.00%,StaticGraphSAGE: SAGEConv(13->256) | SAGEConv(256->256); dot-product scorer,180,138240
+Random,gen_replay,1.018e-03,3.198e-05,32,67.55%,62.75%,70.00%,59.00%,78.65%,69.69%,65.22%,StaticGraphSAGE: SAGEConv(13->32) | SAGEConv(32->32); dot-product scorer,180,2944
+Bayesian,naive,1.862e-03,1.647e-06,256,71.33%,85.62%,72.00%,72.25%,67.36%,80.74%,50.00%,StaticGraphSAGE: SAGEConv(13->256) | SAGEConv(256->256); dot-product scorer,180,138240
+Bayesian,rehearsal,1.238e-03,1.738e-04,256,68.99%,78.50%,69.62%,61.50%,78.10%,76.20%,50.00%,StaticGraphSAGE: SAGEConv(13->256) | SAGEConv(256->256); dot-product scorer,180,138240
+Bayesian,ewc,1.733e-03,1.669e-05,256,68.27%,84.38%,68.38%,55.00%,64.88%,86.97%,50.00%,StaticGraphSAGE: SAGEConv(13->256) | SAGEConv(256->256); dot-product scorer,180,138240
+Bayesian,si,5.624e-04,2.098e-06,64,67.26%,70.88%,77.12%,55.38%,60.88%,74.08%,65.22%,StaticGraphSAGE: SAGEConv(13->64) | SAGEConv(64->64); dot-product scorer,180,9984
+Bayesian,gen_replay,2.718e-03,3.328e-06,256,70.41%,86.62%,73.50%,67.75%,65.15%,79.46%,50.00%,StaticGraphSAGE: SAGEConv(13->256) | SAGEConv(256->256); dot-product scorer,180,138240
+Hyperband,naive,2.542e-03,1.426e-06,32,71.77%,80.75%,74.75%,68.12%,51.38%,75.21%,80.43%,StaticGraphSAGE: SAGEConv(13->32) | SAGEConv(32->32); dot-product scorer,180,2944
+Hyperband,rehearsal,1.488e-03,2.099e-04,64,64.19%,70.62%,76.62%,66.25%,52.34%,62.75%,56.52%,StaticGraphSAGE: SAGEConv(13->64) | SAGEConv(64->64); dot-product scorer,180,9984
+Hyperband,ewc,3.072e-03,3.905e-04,64,67.94%,84.00%,70.25%,58.00%,55.92%,78.61%,60.87%,StaticGraphSAGE: SAGEConv(13->64) | SAGEConv(64->64); dot-product scorer,180,9984
+Hyperband,si,2.777e-03,2.651e-04,32,67.46%,75.88%,69.50%,61.12%,50.96%,66.86%,80.43%,StaticGraphSAGE: SAGEConv(13->32) | SAGEConv(32->32); dot-product scorer,180,2944
+Hyperband,gen_replay,2.108e-03,1.111e-04,128,69.92%,79.62%,72.62%,77.38%,62.53%,77.34%,50.00%,StaticGraphSAGE: SAGEConv(13->128) | SAGEConv(128->128); dot-product scorer,180,36352
+Population-based (PBT),naive,2.372e-03,4.425e-05,64,65.14%,80.25%,73.75%,60.25%,50.55%,76.06%,50.00%,StaticGraphSAGE: SAGEConv(13->64) | SAGEConv(64->64); dot-product scorer,180,9984
+Population-based (PBT),rehearsal,2.196e-03,1.121e-06,32,65.17%,79.75%,68.88%,72.00%,54.96%,65.44%,50.00%,StaticGraphSAGE: SAGEConv(13->32) | SAGEConv(32->32); dot-product scorer,180,2944
+Population-based (PBT),ewc,9.879e-04,1.980e-04,64,59.82%,54.75%,58.75%,70.38%,51.65%,73.37%,50.00%,StaticGraphSAGE: SAGEConv(13->64) | SAGEConv(64->64); dot-product scorer,180,9984
+Population-based (PBT),si,1.372e-03,1.857e-05,64,61.99%,64.38%,64.75%,61.12%,71.21%,60.48%,50.00%,StaticGraphSAGE: SAGEConv(13->64) | SAGEConv(64->64); dot-product scorer,180,9984
+Population-based (PBT),gen_replay,2.865e-03,6.857e-06,32,63.68%,80.50%,69.62%,62.38%,51.65%,59.21%,58.70%,StaticGraphSAGE: SAGEConv(13->32) | SAGEConv(32->32); dot-product scorer,180,2944
+Evolutionary (GA),naive,1.293e-03,5.500e-04,64,66.54%,76.25%,62.00%,54.62%,69.83%,62.61%,73.91%,StaticGraphSAGE: SAGEConv(13->64) | SAGEConv(64->64); dot-product scorer,180,9984
+Evolutionary (GA),rehearsal,2.755e-03,1.354e-04,256,66.27%,83.62%,80.00%,69.75%,51.10%,63.17%,50.00%,StaticGraphSAGE: SAGEConv(13->256) | SAGEConv(256->256); dot-product scorer,180,138240
+Evolutionary (GA),ewc,2.105e-03,1.181e-05,64,66.17%,83.62%,81.75%,57.38%,52.75%,71.53%,50.00%,StaticGraphSAGE: SAGEConv(13->64) | SAGEConv(64->64); dot-product scorer,180,9984
+Evolutionary (GA),si,2.001e-03,5.848e-05,32,63.40%,72.62%,68.00%,56.62%,64.33%,68.84%,50.00%,StaticGraphSAGE: SAGEConv(13->32) | SAGEConv(32->32); dot-product scorer,180,2944
+Evolutionary (GA),gen_replay,1.730e-04,7.515e-07,128,63.12%,52.38%,61.25%,58.38%,63.36%,67.28%,76.09%,StaticGraphSAGE: SAGEConv(13->128) | SAGEConv(128->128); dot-product scorer,180,36352

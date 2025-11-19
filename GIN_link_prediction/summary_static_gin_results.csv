@@ -1,0 +1,31 @@
+Search,Mechanism,LR,WD,HiddenDim,Avg final acc,Task0 acc,Task1 acc,Task2 acc,Task3 acc,Task4 acc,Task5 acc,Last arch,Edges (last task train),Params trained (last task)
+Grid,naive,1.000e-03,0.000e+00,32,69.17%,77.88%,66.25%,58.50%,66.80%,71.67%,73.91%,StaticGIN: GINConv(13->32) | GINConv(32->32); dot-product scorer,180,3618
+Grid,rehearsal,1.000e-03,1.000e-05,32,69.33%,78.50%,62.25%,54.75%,56.06%,83.99%,80.43%,StaticGIN: GINConv(13->32) | GINConv(32->32); dot-product scorer,180,3618
+Grid,ewc,1.000e-03,1.000e-05,32,68.25%,71.88%,64.00%,67.75%,50.83%,76.77%,78.26%,StaticGIN: GINConv(13->32) | GINConv(32->32); dot-product scorer,180,3618
+Grid,si,1.000e-03,1.000e-05,32,72.43%,83.00%,69.12%,77.25%,50.14%,74.65%,80.43%,StaticGIN: GINConv(13->32) | GINConv(32->32); dot-product scorer,180,3618
+Grid,gen_replay,1.000e-03,0.000e+00,64,70.41%,75.38%,72.12%,68.62%,63.77%,77.34%,65.22%,StaticGIN: GINConv(13->64) | GINConv(64->64); dot-product scorer,180,13378
+Random,naive,2.593e-03,1.011e-06,32,67.80%,82.12%,70.75%,63.50%,51.10%,74.08%,65.22%,StaticGIN: GINConv(13->32) | GINConv(32->32); dot-product scorer,180,3618
+Random,rehearsal,7.044e-04,4.851e-05,128,68.56%,79.25%,66.62%,72.62%,56.20%,75.78%,60.87%,StaticGIN: GINConv(13->128) | GINConv(128->128); dot-product scorer,180,51330
+Random,ewc,8.238e-04,2.152e-04,128,67.85%,74.38%,73.25%,77.88%,55.51%,76.06%,50.00%,StaticGIN: GINConv(13->128) | GINConv(128->128); dot-product scorer,180,51330
+Random,si,6.413e-04,8.589e-04,32,63.32%,55.38%,65.88%,55.25%,53.99%,68.98%,80.43%,StaticGIN: GINConv(13->32) | GINConv(32->32); dot-product scorer,180,3618
+Random,gen_replay,5.362e-04,6.607e-06,128,69.03%,75.25%,75.75%,67.50%,55.79%,79.04%,60.87%,StaticGIN: GINConv(13->128) | GINConv(128->128); dot-product scorer,180,51330
+Bayesian,naive,3.937e-04,3.261e-05,128,69.70%,72.00%,74.00%,67.12%,57.85%,64.59%,82.61%,StaticGIN: GINConv(13->128) | GINConv(128->128); dot-product scorer,180,51330
+Bayesian,rehearsal,4.186e-04,3.636e-04,256,65.73%,71.50%,66.00%,57.75%,63.22%,70.68%,65.22%,StaticGIN: GINConv(13->256) | GINConv(256->256); dot-product scorer,180,200962
+Bayesian,ewc,8.139e-04,1.930e-06,64,69.68%,70.75%,71.62%,68.88%,50.28%,73.94%,82.61%,StaticGIN: GINConv(13->64) | GINConv(64->64); dot-product scorer,180,13378
+Bayesian,si,7.346e-04,6.061e-05,64,65.90%,67.75%,73.38%,68.62%,51.24%,60.48%,73.91%,StaticGIN: GINConv(13->64) | GINConv(64->64); dot-product scorer,180,13378
+Bayesian,gen_replay,6.018e-04,2.595e-04,256,70.62%,75.12%,77.25%,67.75%,56.89%,79.32%,67.39%,StaticGIN: GINConv(13->256) | GINConv(256->256); dot-product scorer,180,200962
+Hyperband,naive,1.326e-03,2.036e-06,128,65.10%,72.25%,72.88%,68.75%,50.83%,75.92%,50.00%,StaticGIN: GINConv(13->128) | GINConv(128->128); dot-product scorer,180,51330
+Hyperband,rehearsal,2.545e-03,1.068e-04,32,67.37%,74.62%,74.00%,55.62%,51.24%,66.15%,82.61%,StaticGIN: GINConv(13->32) | GINConv(32->32); dot-product scorer,180,3618
+Hyperband,ewc,2.564e-03,7.528e-05,64,57.42%,56.50%,52.62%,50.88%,50.00%,56.23%,78.26%,StaticGIN: GINConv(13->64) | GINConv(64->64); dot-product scorer,180,13378
+Hyperband,si,1.220e-03,6.917e-05,32,70.49%,73.50%,68.50%,75.00%,55.65%,69.83%,80.43%,StaticGIN: GINConv(13->32) | GINConv(32->32); dot-product scorer,180,3618
+Hyperband,gen_replay,1.625e-03,1.292e-05,128,63.25%,71.50%,77.75%,63.00%,50.96%,66.29%,50.00%,StaticGIN: GINConv(13->128) | GINConv(128->128); dot-product scorer,180,51330
+Population-based (PBT),naive,3.083e-03,4.425e-05,64,50.00%,50.00%,50.00%,50.00%,50.00%,50.00%,50.00%,StaticGIN: GINConv(13->64) | GINConv(64->64); dot-product scorer,180,13378
+Population-based (PBT),rehearsal,3.137e-03,1.121e-06,128,60.04%,66.62%,52.88%,63.12%,50.69%,76.91%,50.00%,StaticGIN: GINConv(13->128) | GINConv(128->128); dot-product scorer,180,51330
+Population-based (PBT),ewc,3.095e-03,2.215e-06,128,59.23%,56.88%,51.38%,53.75%,50.00%,73.80%,69.57%,StaticGIN: GINConv(13->128) | GINConv(128->128); dot-product scorer,180,51330
+Population-based (PBT),si,1.819e-03,3.026e-05,128,66.31%,73.25%,74.88%,59.38%,50.00%,59.92%,80.43%,StaticGIN: GINConv(13->128) | GINConv(128->128); dot-product scorer,180,51330
+Population-based (PBT),gen_replay,2.204e-03,6.857e-06,128,60.52%,62.38%,66.00%,68.75%,50.28%,65.72%,50.00%,StaticGIN: GINConv(13->128) | GINConv(128->128); dot-product scorer,180,51330
+Evolutionary (GA),naive,1.512e-03,3.738e-04,32,62.25%,73.75%,67.38%,60.25%,50.00%,59.07%,63.04%,StaticGIN: GINConv(13->32) | GINConv(32->32); dot-product scorer,180,3618
+Evolutionary (GA),rehearsal,7.991e-04,1.188e-04,64,62.60%,56.62%,60.25%,57.63%,51.52%,69.12%,80.43%,StaticGIN: GINConv(13->64) | GINConv(64->64); dot-product scorer,180,13378
+Evolutionary (GA),ewc,2.241e-03,4.527e-04,32,59.07%,63.62%,54.87%,63.62%,52.89%,69.41%,50.00%,StaticGIN: GINConv(13->32) | GINConv(32->32); dot-product scorer,180,3618
+Evolutionary (GA),si,1.004e-03,1.248e-05,64,60.56%,69.12%,61.00%,50.25%,61.43%,71.53%,50.00%,StaticGIN: GINConv(13->64) | GINConv(64->64); dot-product scorer,180,13378
+Evolutionary (GA),gen_replay,3.032e-04,4.438e-06,256,60.91%,73.88%,52.88%,52.12%,56.34%,69.41%,60.87%,StaticGIN: GINConv(13->256) | GINConv(256->256); dot-product scorer,180,200962
