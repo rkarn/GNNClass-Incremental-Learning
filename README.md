@@ -4,6 +4,8 @@ This repository implements Class Incremental Learning (CIL) for Graph Neural Net
 
 ---
 
+![Overall Architecture](overall_diagram.png)
+
 ## 📁 Repository Structure
 
 ### 🔄 Parsing Script
