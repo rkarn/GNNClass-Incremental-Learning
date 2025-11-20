@@ -69,6 +69,17 @@ These metrics are computed and visualized in the Jupyter notebooks `<GNN name>_n
 
 ---
 
+## 🧪 FCN-MNIST: Toy Example for CIL
+
+To help readers unfamiliar with Graph Neural Networks (GNNs), this repository includes a toy example using a **Fully Connected Network (FCN)** on the **MNIST digit image dataset**. This example is located in the `FCN_MNIST` folder.
+
+- It uses a **static architecture** to simulate **class incremental learning** by introducing digit classes (0–9) incrementally across batches.
+- This setup provides a gentle introduction to CIL concepts—such as catastrophic forgetting, batch-wise accuracy tracking, and incremental updates—without requiring prior knowledge of GNNs.
+- The code and results are structured similarly to the GNN experiments, making it easy to transition from this toy example to more advanced graph-based tasks.
+
+This example is ideal for readers who want to understand the fundamentals of class incremental learning before diving into circuit-level GNN implementations.
+
+---
 ## 🧪 Reproducibility
 All folders contain:
 - Independent scripts and notebooks.
