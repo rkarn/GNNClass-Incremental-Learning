@@ -2,6 +2,8 @@
 
 This repository implements Class Incremental Learning (CIL) for Graph Neural Networks (GNNs) applied to circuits. It includes modular code for both **node classification** and **link prediction**, across **static** and **dynamic** GNN architectural settings, with detailed tracking of **catastrophic forgetting metrics**.
 
+## [Supplementary document](Supplementary_document.pdf) provide additional results and artificats that were omitted in the main paper due to space constraints.
+
 ---
 
 <div align="center">
